@@ -75,7 +75,7 @@ python -m scripts.run_full_processing --input data/Emultic2kmNC4_goes16_20230714
 ### Résultats (output)
 Les fichiers GeoTIFF et les images RGB générés sont automatiquement enregistrés dans le dossier outputs/.
 
-## Exemple d’image
+### Exemple d’image
 L’image générée à partir de la scène du **14 juillet 2023 à 17h UTC** (feux de forêt au Canada) a été compressée au format `.jpg`  
 pour respecter les limites de taille GitHub tout en conservant un aperçu du rendu.  
 Le fichier original `.tif` (≈ 100 Mo) est disponible localement mais non inclus dans le dépôt public.
