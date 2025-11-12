@@ -1,6 +1,6 @@
 """
 utils.py
-Fonctions utilitaires : normalisation, conversion bit-depth, écriture GeoTIFF.
+Fonctions utilitaires : normalisation, verification output_path
 """
 import numpy as np
 import rasterio
@@ -36,9 +36,6 @@ def normalize_band_custom(band, in_min, in_max, gamma=1.0, bit_depth=16, floor=0
 
 
 def ensure_output_dir(output_path):
-    """
-    Vérifie si le dossier de sortie existe, sinon le crée.
-    """
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     return output_path
