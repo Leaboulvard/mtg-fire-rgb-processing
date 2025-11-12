@@ -23,11 +23,11 @@ def main():
     mode = args.mode
 
     # === 1. Chargement du dataset ===
-    print(f"🔹 Ouverture du fichier : {input_file}")
+    print(f"Ouverture du fichier : {input_file}")
     ds = xr.open_dataset(input_file)
 
     # === 2. Extraction des bandes utilisées ===
-    print("🔹 Extraction des bandes nécessaires...")
+    print("Extraction des bandes nécessaires...")
     VIS_008 = ds["VIS_008"].values
     VIS_006 = ds["VIS_006"].values
     VIS_004 = ds["VIS_004"].values
@@ -37,11 +37,11 @@ def main():
     IR_112 = ds["IR_112"].values
 
     # === 3. Calcul de l'indice de feu ===
-    print("🔥 Calcul de l’indice de feu...")
+    print("Calcul de l’indice de feu...")
     ratio_16bits = compute_index_from_raw(IR_112, IR_039, bit_depth=bit_depth)
 
     # === 4. Normalisation des canaux visibles ===
-    print("🎨 Normalisation des bandes visibles...")
+    print("Normalisation des bandes visibles...")
     VIS_008_norm = np.maximum(0, np.minimum(65535, (65535 * (VIS_008 / 100))))
     VIS_004_norm = np.maximum(0, np.minimum(65535, (65535 * (VIS_004 / 100))))
     VIS_022_norm = np.maximum(0, np.minimum(65535, (65535 * (VIS_022 / 100))))

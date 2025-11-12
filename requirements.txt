@@ -1,0 +1,7 @@
+numpy
+xarray
+rasterio
+netCDF4
+imageio
+matplotlib
+tqdm

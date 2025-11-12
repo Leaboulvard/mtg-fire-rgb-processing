@@ -1,0 +1,10 @@
+# Ignore data and large files
+data/
+*.nc
+outputs/*.tif
+outputs/*.nc
+__pycache__/
+*.pyc
+.env
+
+
