@@ -1,6 +1,6 @@
 # Ignore data and large files
-data/
-*.nc
+data/*
+!data/.gitkeep
 outputs/*.tif
 outputs/*.nc
 __pycache__/
