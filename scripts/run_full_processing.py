@@ -65,7 +65,7 @@ def main():
     # === 6. Sauvegarde ===
     ensure_output_dir(output_dir)
     output_path = os.path.join(output_dir, output_name)
-    print(f"💾 Enregistrement de l’image : {output_path}")
+    print(f"Enregistrement de l’image : {output_path}")
     io.imsave(output_path, composite_rgb)
 
     print("✅ Traitement terminé avec succès !")

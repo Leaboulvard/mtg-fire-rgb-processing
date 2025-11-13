@@ -18,7 +18,7 @@ Ce dépôt regroupe des scripts Python permettant de traiter des **données mult
  Un **indice feu** (bande IR 3.9 µm et IR 11.2 µm)  
  Des **composites RGB de jour** (True Color + Fire Temperature RGB)  
 
-Le pipeline reproduit la méthodologie de traitement développée lors d’un stage à **Météo-France** pour la mission **MTG**.  
+Le pipeline reproduit la méthodologie de traitement développée lors d’un stage à **Météo-France** pour la mission de développement de produit d'image satellitaire selon le programme **MTG**.  
 Les données GOES-16 servent ici d’exemple libre pour démontrer la logique appliquée aux produits MTG (non publics).
 
 ---
@@ -92,5 +92,5 @@ Le fichier utils.py est responsable de la normalisation, de la conversion en 8 o
 ---
 
 ## Auteur
-Léa — développé dans le cadre d’un stage à Météo-France (2025).
+Léa — développé dans le cadre d’un stage à Météo-France (2024).
 (Projet à visée éducative et démonstrative — workflow équivalent à celui de MTG, appliqué sur des données publiques GOES-16.)

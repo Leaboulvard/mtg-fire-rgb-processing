@@ -2,7 +2,7 @@
 Ce module calcule un indice de feu normalisé à partir des bandes infrarouges
 IR_112 et IR_039 issues de produits satellitaires (GOES / MTG).
 
-Inspiré du travail original de Léa Boulvard à Météo-France :
+Inspiré du travail original à Météo-France :
 - IR_112 (≈ 10.5 µm) : sensible à la température de surface.
 - IR_039 (≈ 3.9 µm) : sensible aux hautes températures (feux).
 """
